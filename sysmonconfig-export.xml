@@ -71,7 +71,7 @@
 	<!-- <ArchiveDirectory> -->
 
 	<EventFiltering>
-
+		<RegistryEvent onmatch="include"><TargetObject condition="contains">Security\Trusted Documents\TrustRecords</TargetObject></RegistryEvent>
 	<!--SYSMON EVENT ID 1 : PROCESS CREATION [ProcessCreate]-->
 		<!--COMMENT:	All processes launched will be logged, except for what matches a rule below. It's best to be as specific as possible,
 			to avoid user-mode executables imitating other process names to avoid logging, or if malware drops files in an existing directory.
